@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "YouTubeLess",
+    "version": "1.0",
+    "description": "Changes the background color of YouTube homepage to green.",
+    "permissions": [
+      "tabs",
+      "https://*.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
+  
